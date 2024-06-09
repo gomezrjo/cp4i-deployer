@@ -4,7 +4,6 @@ metadata:
   labels:
     backup.appconnect.ibm.com/component: dashboard
   name: ace-dashboard
-  namespace: tools
 spec:
   authentication:
     integrationKeycloak:
@@ -37,5 +36,5 @@ spec:
   storage:
     size: 5Gi
     type: persistent-claim
-    class: ocs-storagecluster-cephfs
+    class: ${OCP_FILE_STORAGE}
   version: '12.0'
