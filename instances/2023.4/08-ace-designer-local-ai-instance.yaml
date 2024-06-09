@@ -4,7 +4,6 @@ metadata:
   labels:
     backup.appconnect.ibm.com/component: designerauthoring
   name: ace-designer-ai
-  namespace: tools
 spec:
   authentication:
     integrationKeycloak:
@@ -17,7 +16,7 @@ spec:
     storage:
       size: 10Gi
       type: persistent-claim
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
   designerFlowsOperationMode: local
   designerMappingAssist:
     enabled: true
@@ -26,7 +25,7 @@ spec:
       useIncrementalLearning: true
       storage:
         type: persistent-claim
-        class: ocs-storagecluster-cephfs
+        class: ${OCP_FILE_STORAGE}
   license:
     accept: true
     license: L-QECF-MBXVLU
