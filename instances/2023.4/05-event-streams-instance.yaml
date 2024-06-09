@@ -68,7 +68,7 @@ spec:
       storage:
         type: persistent-claim
         size: 4Gi
-        class: ocs-storagecluster-ceph-rbd
+        class: ${OCP_BLOCK_STORAGE}
     zookeeper:
       replicas: 3
       metricsConfig:
@@ -80,7 +80,7 @@ spec:
       storage:
         type: persistent-claim
         size: 2Gi
-        class: ocs-storagecluster-ceph-rbd
+        class: ${OCP_BLOCK_STORAGE}
     entityOperator:
       topicOperator: {}
       userOperator: {}      
