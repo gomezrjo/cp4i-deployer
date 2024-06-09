@@ -8,7 +8,6 @@ metadata:
     app.kubernetes.io/managed-by: ibm-apiconnect
     app.kubernetes.io/name: apiconnect-small
   name: apim-demo
-  namespace: tools
 spec:
   analytics:
     mtlsValidateClient: true
