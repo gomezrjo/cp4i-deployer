@@ -1,0 +1,19 @@
+apiVersion: events.ibm.com/v1beta1
+kind: EventProcessing
+metadata:
+  name: ep-demo
+  namespace: tools
+spec:
+  license:
+    accept: true
+    license: L-HRZF-DWHH7A
+    use: EventAutomationNonProduction
+  flink:
+    endpoint: 'ea-flink-demo-rest:8081'
+  authoring:
+    authConfig:
+      authType: LOCAL
+    storage:
+      storageClassName: ocs-storagecluster-ceph-rbd
+      type: persistent-claim
+      size: 100M
