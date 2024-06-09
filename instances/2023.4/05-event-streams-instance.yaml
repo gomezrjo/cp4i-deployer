@@ -4,7 +4,6 @@ metadata:
   annotations:
     eventstreams.ibm.com/apicurio-registry-version: '>=2.4'
   name: es-demo
-  namespace: tools
   labels:
     assembly.integration.ibm.com/tools.jgr-demo: 'true'
 spec:
