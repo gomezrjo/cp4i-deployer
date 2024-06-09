@@ -2,7 +2,6 @@ apiVersion: events.ibm.com/v1beta1
 kind: EventProcessing
 metadata:
   name: ep-demo
-  namespace: tools
 spec:
   license:
     accept: true
@@ -14,6 +13,6 @@ spec:
     authConfig:
       authType: LOCAL
     storage:
-      storageClassName: ocs-storagecluster-ceph-rbd
+      storageClassName: ${OCP_BLOCK_STORAGE}
       type: persistent-claim
       size: 100M
