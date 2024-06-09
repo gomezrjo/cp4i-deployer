@@ -4,7 +4,6 @@ metadata:
   labels:
     backup.integration.ibm.com/component: assetrepository
   name: asset-repo-ai
-  namespace: tools
 spec:
   designerAIFeatures:
     enabled: true
@@ -15,8 +14,8 @@ spec:
   singleReplicaOnly: true
   storage:
     assetDataVolume:
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
       size: 100Mi
     couchVolume:
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
   version: 2023.4.1
