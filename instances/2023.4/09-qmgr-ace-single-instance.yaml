@@ -14,14 +14,6 @@ spec:
     accept: true
     license: L-VTPK-22YZPK
     use: NonProduction
-  pki:
-    keys:
-      - name: default
-        secret:
-          secretName: mq-demo-tls-secret
-          items: 
-          - tls.key
-          - tls.crt
   queueManager:
     name: QMGRDEMO
     resources:
@@ -32,7 +24,7 @@ spec:
     storage:
       queueManager:
         type: persistent-claim
-      defaultClass: ocs-storagecluster-ceph-rbd
+      defaultClass: ${OCP_BLOCK_STORAGE}
     availability:
       type: SingleInstance
     mqsc:
