@@ -2,7 +2,6 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: ace-is-hpa-demo
-  namespace: tools
 spec:
   scaleTargetRef:
     kind: IntegrationRuntime
