@@ -1,0 +1,13 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: ace-is-hpa-demo
+  namespace: tools
+spec:
+  scaleTargetRef:
+    kind: IntegrationRuntime
+    name: jgr-ace-bake-cp4i
+    apiVersion: appconnect.ibm.com/v1beta1
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 10
