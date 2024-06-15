@@ -30,4 +30,4 @@ spec:
     - ace-qmgr-demo-policy
     - ace-es-demo-scram-policy
     - ace-es-demo-scram-secid
-    - es-cert.jks
+    - es-cert.p12
