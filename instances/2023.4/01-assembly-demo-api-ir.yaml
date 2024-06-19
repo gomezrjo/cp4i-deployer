@@ -2,7 +2,6 @@ apiVersion: integration.ibm.com/v1beta1
 kind: IntegrationAssembly
 metadata:
   name: ia-demo
-  namespace: tools
 spec:
   license:
     accept: true
