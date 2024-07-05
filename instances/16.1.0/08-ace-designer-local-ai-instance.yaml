@@ -26,7 +26,7 @@ spec:
       useIncrementalLearning: true
       storage:
         type: persistent-claim
-        class: ocs-storagecluster-cephfs
+        class: ${OCP_FILE_STORAGE}
   license:
     accept: true
     license: L-XRNH-47FJAW
