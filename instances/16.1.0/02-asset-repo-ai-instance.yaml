@@ -15,7 +15,7 @@ spec:
   singleReplicaOnly: true
   storage:
     assetDataVolume:
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
     couchVolume:
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
   version: 4.0-sc2
