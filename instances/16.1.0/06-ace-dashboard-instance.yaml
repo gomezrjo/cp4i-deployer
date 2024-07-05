@@ -37,7 +37,7 @@ spec:
   storage:
     size: 5Gi
     type: persistent-claim
-    class: ocs-storagecluster-cephfs
+    class: ${OCP_FILE_STORAGE}
   version: '12.0'
   api:
     enabled: true
