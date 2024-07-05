@@ -14,14 +14,6 @@ spec:
     accept: true
     license: L-JTPV-KYG8TF
     use: NonProduction
-  pki:
-    keys:
-      - name: default
-        secret:
-          secretName: mq-demo-tls-secret
-          items: 
-          - tls.key
-          - tls.crt
   queueManager:
     name: QMGRDEMO
     resources:
