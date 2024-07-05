@@ -17,7 +17,7 @@ spec:
     storage:
       size: 10Gi
       type: persistent-claim
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
   designerFlowsOperationMode: local
   designerMappingAssist:
     enabled: true
