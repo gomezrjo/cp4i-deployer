@@ -14,7 +14,7 @@ spec:
     authConfig:
       authType: LOCAL
     storage:
-      storageClassName: ocs-storagecluster-ceph-rbd
+      storageClassName: ${OCP_BLOCK_STORAGE}
       type: persistent-claim
       size: 100M
     template:
