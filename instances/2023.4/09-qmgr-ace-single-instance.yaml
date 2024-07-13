@@ -13,6 +13,14 @@ spec:
     accept: true
     license: L-VTPK-22YZPK
     use: NonProduction
+  pki:
+    keys:
+      - name: default
+        secret:
+          secretName: qmgr-demo-tls-secret
+          items: 
+          - tls.key
+          - tls.crt
   queueManager:
     name: QMGRDEMO
     resources:
