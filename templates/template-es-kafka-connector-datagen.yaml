@@ -43,6 +43,8 @@ spec:
     topic.name.newcustomers: CUSTOMERS.NEW.AVRO
     topic.name.onlineorders: ORDERS.ONLINE.AVRO
     topic.name.outofstocks: STOCK.NOSTOCK.AVRO
+    topic.name.returnrequests: PRODUCT.RETURNS.AVRO
+    topic.name.productreviews: PRODUCT.REVIEWS.AVRO
 
     timings.ms.badgeins: 60000
 
@@ -87,20 +89,4 @@ spec:
     topic.name.newcustomers: CUSTOMERS.NEW.REG
     topic.name.onlineorders: ORDERS.ONLINE.REG
     topic.name.outofstocks: STOCK.NOSTOCK.REG
-
-    timings.ms.badgeins: 600000
-    cancellations.ratio: 0.05
-
-    value.converter.apicurio.auth.username: kafka-connect-user
-    value.converter.apicurio.auth.password: ${ES_USER_PWD}
-
-    value.converter.apicurio.registry.request.ssl.truststore.location: /opt/kafka/connect-certs/es-demo-cluster-ca-cert/ca.p12
-    value.converter.apicurio.registry.request.ssl.truststore.type: PKCS12
-    value.converter.apicurio.registry.request.ssl.truststore.password: ${ES_CERT_PWD}
-
-    value.converter.apicurio.registry.url: ${ES_SCHEMA_REGISTRY_URL}
-    value.converter.apicurio.registry.auto-register: true
-    value.converter.apicurio.registry.as-confluent: true
-    value.converter.apicurio.registry.use-id: contentId
-    value.converter.apicurio.registry.headers.enabled: false
-    value.converter.apicurio.registry.dereference-schema: true
+    topic.name.returnrequests: PRODUCT.RETURNS.REG
