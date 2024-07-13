@@ -2,7 +2,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: cp4i-ivt-topic
-  namespace: tools
   labels:
     eventstreams.ibm.com/cluster: es-demo
 spec:
@@ -15,7 +14,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: cp4i-es-demo-topic
-  namespace: tools
   labels:
     eventstreams.ibm.com/cluster: es-demo
 spec:
@@ -28,7 +26,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: cp4i-mq-2-es-demo-topic
-  namespace: tools
   labels:
     eventstreams.ibm.com/cluster: es-demo
 spec:
@@ -41,7 +38,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: cp4i-es-2-mq-demo-topic
-  namespace: tools
   labels:
     eventstreams.ibm.com/cluster: es-demo
 spec:
@@ -54,7 +50,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: apic-analytics-offload-topic
-  namespace: tools
   labels:
     eventstreams.ibm.com/cluster: es-demo
 spec:
@@ -67,7 +62,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: feedback
-  namespace: tools
   labels:
     eventstreams.ibm.com/cluster: es-demo
 spec:
