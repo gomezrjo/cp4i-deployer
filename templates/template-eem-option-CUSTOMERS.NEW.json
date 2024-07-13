@@ -1,9 +1,9 @@
 {
-    "eventSourceId": "<templated>",
+    "eventSourceId": "EVENTSOURCEID",
     "alias": "CUSTOMERS",
     "name": "Self service",
+    "controls": [],
     "hidden": false,
     "allowSubscriptions": true,
-    "gatewayGroups": [ "egw-group" ],
-    "controls": []
+    "gatewayGroups": [ "egw-group" ]
 }

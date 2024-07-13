@@ -1,6 +1,6 @@
 {
     "eventSourceId": "EVENTSOURCEID",
-    "alias": "ORDERS",
+    "alias": "PRODUCT.REVIEWS",
     "name": "Self service",
     "controls": [],
     "hidden": false,
