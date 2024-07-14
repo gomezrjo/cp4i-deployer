@@ -47,4 +47,4 @@ spec:
             - es-cert.p12
   storage:
     readWriteOnce:
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
