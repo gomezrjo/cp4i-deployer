@@ -19,7 +19,7 @@ spec:
     storage:
       queueManager:
         type: persistent-claim
-      defaultClass: ocs-storagecluster-ceph-rbd
+      defaultClass: ${OCP_BLOCK_STORAGE}
       defaultDeleteClaim: true
     availability:
       type: NativeHA
