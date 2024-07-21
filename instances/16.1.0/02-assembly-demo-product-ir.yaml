@@ -60,4 +60,4 @@ spec:
             - github-barauth
   storage:
     readWriteOnce:
-      class: ocs-storagecluster-ceph-rbd
+      class: ${OCP_BLOCK_STORAGE}
