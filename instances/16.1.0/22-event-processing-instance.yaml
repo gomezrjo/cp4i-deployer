@@ -14,6 +14,24 @@ spec:
     authConfig:
       authType: LOCAL
     storage:
-      storageClassName: ${OCP_BLOCK_STORAGE}
+      storageClassName: ocs-storagecluster-ceph-rbd
       type: persistent-claim
       size: 100M
+    template:
+      pod:
+        spec:
+          containers:
+            - name: backend
+              env:
+                - name: JAVA_TOOL_OPTIONS
+                  value: '-Djavax.net.ssl.trustStore=/opt/ibm/sp-backend/certs/eventautomation.jks -Djavax.net.ssl.trustStorePassword=eventautomationstore'
+              volumeMounts:
+                - mountPath: /opt/ibm/sp-backend/certs
+                  name: truststore
+          volumes:
+            - name: truststore
+              secret:
+                items:
+                  - key: eventautomation.jks
+                    path: eventautomation.jks
+                secretName: eventautomation-truststore
