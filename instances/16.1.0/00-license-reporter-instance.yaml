@@ -14,4 +14,4 @@ spec:
   authentication:
     useradmin:
       enabled: true
-  storageClass: ocs-storagecluster-ceph-rbd
+  storageClass: ${OCP_BLOCK_STORAGE}
