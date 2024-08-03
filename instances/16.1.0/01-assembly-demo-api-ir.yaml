@@ -17,7 +17,7 @@ spec:
     list:
       - kind: API
         metadata:
-          name: jgr-esaapi-ia
+          name: jgr-esapi-ia
         spec:
           definition:
             integrationRuntime: 
