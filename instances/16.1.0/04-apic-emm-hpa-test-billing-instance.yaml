@@ -1,8 +1,6 @@
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: APIConnectCluster
 metadata:
-  annotations:
-    apiconnect-operator/backups-not-configured: 'true'
   labels:
     backup.apiconnect.ibm.com/component: apiconnectcluster
   name: apim-demo
